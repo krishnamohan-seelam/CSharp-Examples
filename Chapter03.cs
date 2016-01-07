@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 using System.Reflection;
 
 
- // example to demonstrate various operators in C# ?,??,typeof
+ // example to demonstrate various operators in C# ?,??,typeof ,is ,as
 /*
- *  int? a;
+ *  int? a;     --- Nullable type declaration
  *  a ?? default--- Null-coalescing(??)   returns  left hand  operand  if it's not null else returns right hand operand.
+ *  is          --- equivalent of instanceof operator in java 
+ *  as          --- as operator performs only reference conversions, nullable conversions and boxing conversions.
+ *                  The as operator can't perform other conversions, such as user-defined conversions (int to double )
  */
 namespace SSIS_Scripting
 {
