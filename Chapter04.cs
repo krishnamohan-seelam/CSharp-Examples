@@ -13,9 +13,11 @@ using System.Threading.Tasks;
  *  enums
  *  structs :
  *             define properties for structs 
+ *             struct constructors - Constructor chaining,
+ *                                   Single constructor using optional args
  */
 
- 
+
 namespace LearningCS
 {
 
@@ -35,12 +37,13 @@ namespace LearningCS
              private set { _Y = value; }
          }
 
+         /* structs cannnot explicitly contain parameterless constructor
          public Point()
              : this(0, 0)
          {
 
          }
-
+         */
          
 
          public Point(int X=0, int Y=0)
@@ -63,14 +66,15 @@ namespace LearningCS
 
         [Flags]
         enum shape {  circle=0,rectangle,square }
-
+        //constant declaration
+        const double PI = 3.14D;
         static void Main(string[] args)
         {
-            
+             
              //aboutArrays();
-            // aboutEnums();
-             aboutStructs();
-
+             aboutEnums();
+            // aboutStructs();
+             //aboutStatic();
            
 
             Console.WriteLine("Press any key to continue...");
@@ -78,6 +82,11 @@ namespace LearningCS
 
 
 
+        }
+
+        private static void aboutStatic()
+        {
+            Console.WriteLine("InterestRate" + SavingAccount.interestRate);
         }
 
         private static void aboutStructs()
@@ -102,6 +111,7 @@ namespace LearningCS
             double area = 0F;
             double length, breadth;
             string inpLength;
+            
 
             switch (shapeType)
             {
@@ -163,7 +173,7 @@ namespace LearningCS
 
         private static double getArea(double length)
         {
-            return 3.14 * getArea(length, length);
+            return PI * getArea(length, length);
         }
 
         private static double getArea(double length, double breadth)
@@ -175,4 +185,26 @@ namespace LearningCS
 
 
     }
+
+    class SavingAccount
+    {
+        public double currBalance;
+        public static double interestRate =0.4;
+
+        // static constructor  variable assignment would override declaration assigment
+        static SavingAccount()
+        {
+            interestRate = 0.6;
+        }
+        public SavingAccount()
+        {
+            currBalance = 0;
+            
+
+        }
+        
+
+
+    }
+
 }
