@@ -1,0 +1,6 @@
+F:\Krishna\visual studio 2012\Projects\DataMining\DataMining\bin\Debug\DataMining.exe.config
+F:\Krishna\visual studio 2012\Projects\DataMining\DataMining\bin\Debug\DataMining.exe
+F:\Krishna\visual studio 2012\Projects\DataMining\DataMining\bin\Debug\DataMining.pdb
+F:\Krishna\visual studio 2012\Projects\DataMining\DataMining\obj\Debug\DataMining.csprojResolveAssemblyReference.cache
+F:\Krishna\visual studio 2012\Projects\DataMining\DataMining\obj\Debug\DataMining.exe
+F:\Krishna\visual studio 2012\Projects\DataMining\DataMining\obj\Debug\DataMining.pdb
